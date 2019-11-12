@@ -9,16 +9,20 @@
   "scripts": {
     "clean": "rm -rf dist .cache",
     "reset": "rm -rf node_modules dist .cache yarn.lock package-lock.json ",
-    "build:client": "parcel build public/index.html --out-dir dist/client --out-file index.html --public-url /dist",
-    "build:server": "parcel build src/server.js --out-dir dist/server --out-file index.js --public-url /dist --target node",
+    "build:client": "parcel build public/index.html --out-dir dist/client --out-file index.html --public-url /dist --no-source-maps",
+    "build:server": "parcel build src/server.js --out-dir dist/server --out-file index.js --public-url /dist --no-source-maps --target node",
     "build": "yarn clean && yarn build:client && yarn run build:server",
     "start": "yarn run build && node dist/server"
   },
   "devDependencies": {
+    "@babel/core": "^7.7.2",
+    "babel-plugin-import": "^1.12.2",
+    "less": "^3.10.3",
     "parcel-bundler": "^1.12.4",
     "prettier": "^1.19.1"
   },
   "dependencies": {
+    "antd": "^3.25.1",
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "react": "^16.11.0",

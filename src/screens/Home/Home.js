@@ -1,4 +1,5 @@
 import React from "react";
+import { Button } from 'antd'
 
 const HomeScreen = () => {
   return (
@@ -6,6 +7,7 @@ const HomeScreen = () => {
       {typeof window !== 'undefined' && window.document !== undefined
         ? 'CLIENT'
         : 'SERVER'}
+        <Button>AntD</Button>
     </div>
   );
 };
