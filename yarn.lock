@@ -755,6 +755,11 @@
     "@parcel/utils" "^1.11.0"
     physical-cpu-count "^2.0.0"
 
+"@rawewhat/stora@^0.0.1":
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/@rawewhat/stora/-/stora-0.0.1.tgz#305e0240fb32b64981579094147fbd4cf6f2d940"
+  integrity sha512-SR1cFhgWluODxlk3HMUCrOKVUx812e+J5auwMdFkY1AbqGmuDQYHT6bL/rh8VLWUSf7sMIIyEdaTGREWZDm14g==
+
 "@types/q@^1.5.1":
   version "1.5.2"
   resolved "https://registry.yarnpkg.com/@types/q/-/q-1.5.2.tgz#690a1475b84f2a884fd07cd797c00f5f31356ea8"
